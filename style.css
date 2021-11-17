@@ -1,0 +1,29 @@
+body {
+	background: #202628;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height:100vh;
+}
+
+
+.loader-dot {
+	position: absolute;
+	border: 2px solid #ee1212;
+	left: 50%;
+	top: 40%;
+	border-radius: 100%;
+	animation: anm-move 0.9s ease-in-out infinite;
+}
+@keyframes anm-move {
+	0% {
+		box-shadow: -30px 0 0 4px #ee1212, -26px -15px 0 4px #ee1212, 26px 15px 0 4px #ee1212, 30px 0 0 4px #ee1212, 26px -15px 0 4px #ee1212, -26px 15px 0 4px #ee1212;
+	}
+	50% {
+		box-shadow: -26px -15px 0 3.9px #ee1212, 26px 15px 0 3.9px #ee1212, 30px 0 0 3.9px #ee1212, 26px -15px 0 3.9px #ee1212, -26px 15px 0 3.9px #ee1212, -30px 0 0 3.9px #ee1212;
+	}
+	100% {
+		box-shadow: 26px 15px 0 4.1px #ee1212, 30px 0 0 4.1px #ee1212, 26px -15px 0 4.1px #ee1212, -26px 15px 0 4.1px #ee1212, -30px 0 0 4.1px #ee1212, -26px -15px 0 4.1px #ee1212;
+	}
+}
